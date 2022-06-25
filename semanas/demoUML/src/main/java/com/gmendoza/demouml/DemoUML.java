@@ -7,6 +7,7 @@ package com.gmendoza.demouml;
 import com.gmendoza.demouml.modelo.Aeropuerto;
 import com.gmendoza.demouml.modelo.Autor;
 import com.gmendoza.demouml.modelo.Cliente;
+import com.gmendoza.demouml.modelo.Facturar;
 import com.gmendoza.demouml.modelo.Libro;
 import com.gmendoza.demouml.modelo.Persona;
 
@@ -17,11 +18,11 @@ import com.gmendoza.demouml.modelo.Persona;
 public class DemoUML {
 
     public static void main(String[] args) {
-        Persona persona = new Persona();
+        /*Persona persona = new Persona();
         persona.setNombre("Geovanny");
         persona.caminar();
         System.out.println("Nombre es: "+persona.getNombre());
-        
+        */
 
  /* Aeropuerto aeropuerto = new Aeropuerto();
         aeropuerto.setCiudad("Barranquilla");
@@ -47,13 +48,20 @@ public class DemoUML {
 
         Libro libro2 = new Libro("Java 17", new Autor(2345,"Alejandro","alejandro@gmail.com",'M'), 40.0);
         System.out.println(libro2);
-        
+        */
          
         Cliente cliente = new Cliente(22,"Geovanny", 10);
         System.out.println(cliente);
         
         cliente.setDescuento(7);
-        System.out.println("Id Cliente" +cliente.getIdCliente());
-            */    
+        System.out.println(cliente);
+        System.out.println("Id Cliente: " +cliente.getIdCliente());
+        System.out.println("Nombre del Cliente: " +cliente.getNombre());
+        System.out.println("Descuento del Cliente: " +cliente.getDescuento());
+          
+        System.out.println("");
+        Facturar fact = new Facturar(100,cliente,80.0);
+        System.out.println(fact);
+        
     }
 }
