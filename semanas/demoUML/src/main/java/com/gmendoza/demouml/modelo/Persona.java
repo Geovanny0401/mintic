@@ -17,4 +17,14 @@ public class Persona {
     public void caminar(){
         System.out.println("Caminar Yeidis");
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
 }

@@ -6,6 +6,7 @@ package com.gmendoza.demouml;
 
 import com.gmendoza.demouml.modelo.Aeropuerto;
 import com.gmendoza.demouml.modelo.Autor;
+import com.gmendoza.demouml.modelo.Cliente;
 import com.gmendoza.demouml.modelo.Libro;
 import com.gmendoza.demouml.modelo.Persona;
 
@@ -16,9 +17,11 @@ import com.gmendoza.demouml.modelo.Persona;
 public class DemoUML {
 
     public static void main(String[] args) {
-        /*Persona persona = new Persona();
+        Persona persona = new Persona();
+        persona.setNombre("Geovanny");
         persona.caminar();
-         */
+        System.out.println("Nombre es: "+persona.getNombre());
+        
 
  /* Aeropuerto aeropuerto = new Aeropuerto();
         aeropuerto.setCiudad("Barranquilla");
@@ -27,7 +30,7 @@ public class DemoUML {
         System.out.println("Nombre de la ciudad: "+aeropuerto.getCiudad());
         aeropuerto.setCiudad("Valledupar");
         System.out.println("Nombre de la ciudad: "+aeropuerto.getCiudad());
-         */
+        
         Autor autor = new Autor(123456, "Geovanny", "geovanny@gmail.com", 'M');
         System.out.println(autor);
 
@@ -45,5 +48,12 @@ public class DemoUML {
         Libro libro2 = new Libro("Java 17", new Autor(2345,"Alejandro","alejandro@gmail.com",'M'), 40.0);
         System.out.println(libro2);
         
+         
+        Cliente cliente = new Cliente(22,"Geovanny", 10);
+        System.out.println(cliente);
+        
+        cliente.setDescuento(7);
+        System.out.println("Id Cliente" +cliente.getIdCliente());
+            */    
     }
 }
