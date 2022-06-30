@@ -66,4 +66,22 @@ public class Bicicleta {
         }
     }
 
+    public void frenar(double aceleracionNegativa) {
+        if (this.velocidad > aceleracionNegativa) {
+            this.velocidad = this.velocidad - aceleracionNegativa;
+        }
+    }
+
+    public void frenar(String intesidad) {
+        if (intesidad.equals("fuerte")) {
+            if (this.velocidad > 10) {
+                this.velocidad = this.velocidad - 10;
+            }
+        } else {
+            if (this.velocidad > 0) {
+                this.velocidad--;
+            }
+        }
+    }
+
 }
