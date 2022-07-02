@@ -9,7 +9,8 @@ package com.gmendoza.democoleccion.model;
  * @author gmendoza
  */
 public class Empleado {
-        private Integer id;
+
+    private Integer id;
     private String name;
     private Double salary;
 
@@ -45,8 +46,11 @@ public class Empleado {
     public void setSalary(Double salary) {
         this.salary = salary;
     }
-    
-    
+
+    public void increaseSalary(double percentage) {
+        this.salary += this.salary * percentage / 100.0;
+    }
+
     @Override
     public String toString() {
         return "Empleado{" + "id=" + id + ", nombre=" + name + ", salario=" + salary + '}';
