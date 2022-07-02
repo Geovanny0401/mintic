@@ -9,6 +9,7 @@ import com.gmendoza.semana03.model.BicicletaMontania;
 import com.gmendoza.semana03.model.Circulo;
 import com.gmendoza.semana03.model.Cuadrado;
 import com.gmendoza.semana03.model.Figura;
+import com.gmendoza.semana03.model.Perro;
 
 /**
  *
@@ -38,7 +39,7 @@ public class Semana03 {
         + ", color es: " +bicMontania.getColor()
         + ", velcoidad de "+bicMontania.getVelocidad()
         + ", y esta en el cambio " +bicMontania.getCambio() );
-*/
+
         
         Cuadrado cuadrado = new Cuadrado(); 
         Circulo circulo = new Circulo();
@@ -53,6 +54,8 @@ public class Semana03 {
         + " Area del circulo es " +circulo.getArea() 
         + " Perimetro del circulo es " +circulo.getPerimetro());
         
-        
+*/
+        Perro per = new Perro();
+        per.Imprimir("Geovanny");
     }
 }
