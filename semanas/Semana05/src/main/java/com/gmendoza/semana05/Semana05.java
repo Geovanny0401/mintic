@@ -17,7 +17,7 @@ public class Semana05 {
     
     public static void main(String[] args) {
         //System.out.println("Hello World!");
-        
+        logger.info("Iniciando el Sitema");
         Semana05 sem = new Semana05();
         
         try{

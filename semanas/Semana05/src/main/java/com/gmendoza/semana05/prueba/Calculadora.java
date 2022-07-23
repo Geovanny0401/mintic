@@ -10,12 +10,30 @@ package com.gmendoza.semana05.prueba;
  */
 public class Calculadora {
 
-    public Double cuadrado(Double numero) {
-        return numero * numero;
+    public Calculadora() {
     }
-
-    public Double cubo(Double numero) {
-        return numero * numero * numero;
+    
+    public int Suma(int n1, int n2){
+      int resultado;
+      resultado = n1+n2;
+      return resultado;
     }
-
+    
+    public int Resta(int n1, int n2){
+      int resultado;
+      resultado = n1-n2;
+      return resultado;
+    }
+    
+    public int Multiplicacion(int n1, int n2){
+      int resultado;
+      resultado = n1*n2;
+      return resultado;
+    }
+    
+    public int Division(int n1, int n2){
+      int resultado;
+      resultado = n1/n2;
+      return resultado;
+    }
 }
